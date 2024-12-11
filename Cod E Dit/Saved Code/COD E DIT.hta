@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+
+<body style="background-color: yellow;" >
+
+
+<link rel="icon" href="CED.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="animakri.css"/>
+<script type="text/javascript" src="hatever.js"></script>
+<title>Cod E Dit</title>
+<!-- Work space -->
+<div style="positon: absolute; font-family: consolas; background-color: white; margin-top: 125px;   margin-left: 100px; right: 125px; bottom: 125px; width: 1150px; height: 500px;" class="workspace" id="htm" contenteditable="true">WRITE YOUR HTML CODE</div>
+<div style="display: none; font-family: consolas; background-color: white; positon: absolute; margin-top: 100px;  margin-left: 125px; right: 125px; bottom: 125px; width: 1150px; height: 500px;"class="workspace" id="css" contenteditable="true">WRITE YOUR CSS CODE</div>
+<div style="display: none; font-family: consolas; background-color: white; positon: absolute; margin-top: 100px;  margin-left: 125px; right: 125px; bottom: 125px; width: 1150px; height: 500px;"class="workspace" id="js" contenteditable="true">WRITE YOUR JS CODE</div>
+<div id="opendiv" style="display: none;">
+<input id="openfile" placeholder="Write file name" value="./index.html/hta" type="text" />
+<button onclick="openok()" id="openok">OK</button>
+<button onclick="closeopen()">Close</button> 
+</div>
+<div id="open1div" style="display: none;">
+<input id="openfile1" placeholder="Write file name" value="./index.html/hta" type="text" />
+<button onclick="open3ok()" id="openok">OK</button>
+<button onclick="closeopen()">Close</button> 
+</div>
+<div id="open2div" style="display: none;">
+<input id="openfile2" placeholder="Write file name" value="./style.css" type="text" />
+<button onclick="open2ok()" id="openok">OK</button>
+<button onclick="closeopen()">Close</button> 
+</div>
+<div id="open3div" style="display: none;">
+<input id="openfile3" placeholder="Write file name" value="./script.js" type="text" />
+<button onclick="open1ok()" id="openok">OK</button>
+<button onclick="closeopen()">Close</button> 
+</div>
+<p style="position: fixed; bottom: 10px; display: none;" contenteditable="true" id="framename">./Name.language</p>
+<button style="position: fixed; bottom: 10px; margin-left: 150px; display: none;" onclick="framenameok()" id="framenameok">OPEN PREVIEW FRAME</button>
+</body>
+<div style="position: fixed; top: 0px; left: 0px; right: 0px; background-color: cyan; font-family: century gothic;" id="head-div">
+<img src="CED.ico" id="icon"/>
+<button style="position: absolute; top: 0px;  background-color: cyan; border: none;" onclick="fileclick()" ondblclick="fileclick0()" id="file-button">File</button>
+<div style=" display: none; position: fixed; top: 50px; left: 0px; right: 0px; background-color: white; font-family: century gothic;  width: 200px;" id="file-div">
+<div  onclick="newclick()" id="new-div">New</div>
+<div onclick="opeclick()" id="ope-div">Open</div>
+<div onclick="savclick()" id="sav-div">Save as Cod E Dit file</div>
+<div onclick="saveclick()" id="save-div">Save HTML/HTA </div>
+<div onclick="savcclick()" id="save-div">Save CSS </div>
+<div onclick="savjclick()" id="save-div">Save JS</div>
+<div onclick="savaclick()" id="save-div">Save All</div>
+<div onclick="cloclick()" id="clo-div">Close</div>
+</div>
+
+<button style="position: absolute; top: 0px; left: 200px;  background-color: cyan; border: none;" onclick="settingsclick()" ondblclick="settingsclick0()" id="settings-button">Language</button>
+<div id="settings-div" style=" display: none; position: fixed; top: 50px; left: 200px; right: 0px; background-color: white; font-family: century gothic;  width: 200px;">
+<div onclick="htmclick()" id="htm-div">HTML<div id="htmlcodechecker" class="codechecker"></div></div>
+<div onclick="styclick()" id="sty-div">Style<div id="stycodechecker" class="codechecker"></div></div>
+<div onclick="scrclick()" id="scr-div">Script<div id="scrcodechecker" class="codechecker"></div></div>
+</div>
+<button style="position: absolute; top: 0px; left: 400px;  background-color: cyan; border: none;" onclick="prevclick()" ondblclick="prevclick0()" id="prev-button">Preview</button>
+<div id="preview-div" style=" display: none; position: fixed; top: 50px; left: 400px; right: 0px; background-color: white; font-family: century gothic;  width: 200px;">
+<div onclick="prefclick()" id="new-div">Preview in a frame</div>
+<div onclick="preclick()" id="ope-div">Preview</div>
+<div style="color: grey"; onclick="cpreclick()" id="opeo-div">Close Preview</div>
+
+</div>
+<button style="position: absolute; top: 0px; left: 600px;  background-color: cyan; border: none;" onclick="helpclick()" id="prev-button">Help</button>
+</div>
+<iframe id="iframe" width="1000px" height="700px" style="margin-left: 100px; margin-top: 200px; display: none;" src="./"></iframe> 
+<style>
+
+</style>
+</body>
+<div id="full">
+<html id="me">
+</html>
+<style id="ste"></style>
+<script id="scr"></script>
+</div>
+<script>
+document.getElementById("me").innerHTML =document.getElementById("htm").innerHTML; 
+document.getElementById("ste").innerHTML =document.getElementById("css").innerHTML;
+document.getElementById("scr").innerHTML =document.getElementById("js").innerHTML;
+</script>
