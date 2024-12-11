@@ -1,0 +1,86 @@
+#head-div{
+ background-color: cyan;
+ color: yellow;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ right: 0px; 
+}
+body {
+padding-top: 100px;
+}
+#workspace {
+position: absolute;
+top: 100px;
+left: 0px;
+right: 0px;
+height: auto;
+}
+#icon{
+width: 75px;
+height: 75px;
+}
+ #apps-button, #video-button {
+cursor: pointer;
+background-color: cyan;
+border: none;
+color: yellow;
+}
+#home-button {
+	cursor: pointer;
+	background-color: yellow;
+	border: none;
+	color: cyan;
+}
+.appicon {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+.appname {
+	font-family: century gothic;
+	color: seagreen;
+	position: absolute;
+	top: 25px;
+	left: 150px;
+}
+.appcreation {
+	font-size: 15px;
+	font-family: century gothic;
+	color: seagreen;
+	position: absolute;
+	top: 25px;
+	left: 770px;
+}
+.appuse {
+	font-size: 15px;
+	font-family: century gothic;
+	color: seagreen;
+	position: absolute;
+	top: 25px;
+	left: 1090px;
+	width: 200px;
+}
+.appopen {
+	font-family: century gothic;
+	background-color: seagreen;
+	position: absolute;
+	top: 75px;
+	left: 300px;
+}
+.download {
+	font-family: century gothic;
+	background-color: seagreen;
+	position: absolute;
+	top: 75px;
+	left: 500px;
+	text-decoration: none;
+	color: black;
+}
+#aak {
+	position: absolute;
+	padding-top: 40px;
+}
+
